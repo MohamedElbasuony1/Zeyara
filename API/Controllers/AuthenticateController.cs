@@ -31,7 +31,7 @@ namespace API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("Login")]
+        [HttpPost("Login2")]
         public IActionResult Post([FromBody]LoginModel loginuser)
         {
             _logger.LogInfo("before Email=" + loginuser.Email + " Password=" + loginuser.Password);
